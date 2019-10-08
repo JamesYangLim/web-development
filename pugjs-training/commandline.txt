@@ -1,0 +1,5 @@
+# Install pug-cli globally 
+npm install pug-cli -g 
+
+# watch file and automatic re-render html file
+pug -w ./ -o ./html -P

@@ -1,4 +1,22 @@
+//- doctype transitional
 doctype html
 html
     head
     body
+        input(type="password" name="inpPwd" data-js=`${ 1 > 2 ? "OK" : "NOT OK!"}`)
+        
+        // dash(-) defines javascript line
+        - const myClasses = ["class1", "class2", "class3"]
+        
+        // my-div is a class too, and my classes get append to my-div class
+        div.my-div(class=myClasses)
+
+        // inline css style using javascript syntax
+        - const myStyles = {"color": "red", "background-color": "blue"}
+        div(style=myStyles)
+
+        // use javascript attribute object as an element
+        - const myAttributes = {"src": "myPhoto.png", "alt": "This is my photo"}
+        img&attributes(myAttributes)
+
+        input(type="text" disabled=true)
