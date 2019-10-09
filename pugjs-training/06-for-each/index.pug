@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+    body
+        h1 For/Each Loop
+
+        // each and for are the same 
+
+        - const arr = [50,2,3,4,5]
+        - const names = ["Dom", "Sophie", "Mark", "Bryan"]
+        // loop value (v) and index of the value (i)
+        each v, i in names
+            p= v + " - " + i
+
+
+        h1 Loop tuple
+
+        - const grades = {"Physics": 80, "Mathematics": 77, "Biology": 68, "Music": 90};
+        for grade, unit in []
+            p= grade + " - " + unit
+        else
+            // else condition for for/each loop where there is no value to loop
+            string No values are here!

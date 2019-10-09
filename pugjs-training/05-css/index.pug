@@ -1,4 +1,18 @@
 doctype html
 html
     head
+        link(rel="stylesheet" href="style.css")
+
+        // multi-line (.) html element
+        style.
+            p {
+                color: red;
+                text-decoration: underline;
+            }
     body
+        p This is an HTML file!
+
+        p(style="text-align:center; text-transform:uppercase") Internal css 
+        
+        - const pStyles = { "text-align": "center", "text-transform": "uppercase" };
+        p(style=pStyles) Internal css with javascript object

@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Conditionals for Pug
+    body
+        h2 My Web Application
+        
+        - let user = { name: "Domenic", loggedIn: true, lastLogin: 6 }
+
+        if user.loggedIn
+            // pipe (|) tag intrepret the following text as plain text
+            p
+                | Welcome back, 
+                strong #{ user.name }
+        else if user.lastLogin < 10
+            p Your last login was #{ user.lastLogin } minutes ago
+            a(href="/login") Login again
+        else
+            a(href="/login") Login
