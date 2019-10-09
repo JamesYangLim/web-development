@@ -1,9 +1,35 @@
+mixin comment(commentData)
+    .comment
+        if commentData.postedByAdmin
+            em (Posted by Admin)
+        .date= commentData.date
+        .author= commentData.author
+        .text= commentData.text
+
 doctype html
 html
     head
         title Mixins in Pug
+        style.
+            .comment {
+                font-family: sans-serif;
+                line-height: 1.5;
+                padding: 10px;
+                border: 1px solid #555;
+                width: 250px;
+            }
+            .date { font-size: 85%; text-align: right; }
+            .author { font-size: 110%; font-weight: bold; }
+            .text { font-size: 100%; }
     body
-        .comment
-            .date 04-02-2019
-            .author dcode
-            .text Hey mate! Nice tutorials.
+        //- .comment
+        //-     .date 04-02-2019
+        //-     .author dcode
+        //-     .text Hey mate! Nice tutorials.
+
+        // use mixin
+        - const c = { date: '04-02-2019', author: 'dcode', text: 'Hey mate! Nice tutorials.' };
+        +comment(c)
+
+        - const c1 = { postedByAdmin: true, date: '02-07-2020', author: 'bruce', text: 'That was funny.' };
+        +comment(c1)
