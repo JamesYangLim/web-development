@@ -1,0 +1,79 @@
+// import partials scss files
+@import './resets'; // doesn't need underscore
+@import './variables';
+
+// functions
+// should be used to compute and return value
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+// mixin
+// should be used to define style
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content:center;
+    align-items: center;
+}
+
+// $light-theme is a boolean argument with a default value true
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+// media query
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+}
+
+.main {
+    @include flexCenter(row);
+
+    // mathematics operation
+    // NOTE: in scss operation cannot mix type
+
+    // width: 80% - 400px; this is not going to work
+    // width: calc(80%-400px);
+    // width: calc(80% - 40%);
+    width: 80%-40%;
+    // width: 80%;
+
+    margin: /*top and bottom*/0 /*left and right*/auto;
+
+    // #{} is interpolation
+    // & refer to the parent, in this case & = .main
+    #{&}_p1 {
+        font-weight: weight(bold);
+
+        &:hover {
+            color: pink;
+        }
+    }
+
+    #{&}_p2 {
+        @extend .main_p1;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.light {
+    @include theme($light-theme: false);
+}
