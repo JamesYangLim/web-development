@@ -1,3 +1,6 @@
 node_modules
 package-lock.json
 pugjs-training/html/
+
+**/*.html
+**/css
