@@ -41,7 +41,19 @@ header {
 main {
   height: 100%;
   width: 100%;
+}
 
+footer {
+  
+  .footer-link {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+  }
   .social-icons {
     position: fixed;
     bottom: 1rem;
@@ -56,14 +68,4 @@ main {
       }
     }
   }
-}
-
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: set-text-color($primary-color);
 }

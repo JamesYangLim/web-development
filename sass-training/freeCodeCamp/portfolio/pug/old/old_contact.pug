@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Contact Mike Smith
+    link(rel="stylesheet" href="../css/main.css")
+  body
+    header
+      .menu-btn
+        span.menu-btn__burger
+      nav.nav
+        ul.menu-nav        
+          li.menu-nav__item #[a.menu-nav__link(href="index.html") Home]
+          li.menu-nav__item #[a.menu-nav__link(href="about.html") About Me]
+          li.menu-nav__item #[a.menu-nav__link(href="projects.html") My Projects]
+          li.menu-nav__item.active #[a.menu-nav__link(href="contact.html") Contact Me]
+
+    main
+      section.contact
+        h2 Contact Me
+        .contact__list
+          .contact__email #[i.fas.fa-envelope] Email
+            .text-secondary email@email.com
+          .contact__phone #[i.fas.fa-mobile-alt] Phone
+            .text-secondary +61 424 314 958
+          .contact__address #[i.fas.fa-marker-alt] Address
+            .text-secondary 123 Forrest Street, Elizabeth, Singapore
+
+        .social-icons
+          a(href="#!") #[i.fab.fa-twitter.fa-2x]
+          a(href="#!") #[i.fab.fa-facebook.fa-2x]
+          a(href="#!") #[i.fab.fa-instagram.fa-2x]
+          a(href="#!") #[i.fab.fa-github.fa-2x]
+
+        footer &copy; Copyright 2019
+    
+    script(src="https://kit.fontawesome.com/6d2ea823d0.js")
+    script(src="../js/main.js")

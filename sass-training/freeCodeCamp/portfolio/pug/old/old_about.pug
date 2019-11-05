@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title About Mike Smith Portfolio
+    link(rel="stylesheet" href="../css/main.css")
+  body
+    header
+      .menu-btn
+        span.menu-btn__burger
+      nav.nav
+        ul.menu-nav        
+          li.menu-nav__item #[a.menu-nav__link(href="index.html") Home]
+          li.menu-nav__item.active #[a.menu-nav__link(href="about.html") About Me]
+          li.menu-nav__item #[a.menu-nav__link(href="projects.html") My Projects]
+          li.menu-nav__item #[a.menu-nav__link(href="contact.html") Contact Me]
+
+    main
+      section.about
+        .about__bio-image
+          .about__bio
+            h2.text-secondary BIO
+            p. 
+              | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iste 
+              | debitis dolorem libero provident incidunt ipsam, rerum vero ratione eaque 
+              | aperiam natus cumque ut rem. Officia atque nostrum sed molestiae.
+        .jobs
+          .jobs__job
+            h2.text_secondary 2017 - Current
+            h3 Google
+            h6 Full Stack Developer
+            p. 
+              | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iste 
+              | debitis dolorem libero provident incidunt ipsam, rerum vero ratione eaque 
+              | aperiam natus cumque ut rem. Officia atque nostrum sed molestiae.
+          .jobs__job
+            h2.text_secondary 2015 - 2017
+            h3 Microsoft
+            h6 Front End Developer
+            p. 
+              | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iste 
+              | debitis dolorem libero provident incidunt ipsam, rerum vero ratione eaque 
+              | aperiam natus cumque ut rem. Officia atque nostrum sed molestiae.
+          .jobs__job
+            h2.text_secondary 2012 - 2015
+            h3 Super Design & Co.
+            h6 Graphic Designer
+            p. 
+              | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iste 
+              | debitis dolorem libero provident incidunt ipsam, rerum vero ratione eaque 
+              | aperiam natus cumque ut rem. Officia atque nostrum sed molestiae.
+        .social-icons
+          a(href="#!") #[i.fab.fa-twitter.fa-2x]
+          a(href="#!") #[i.fab.fa-facebook.fa-2x]
+          a(href="#!") #[i.fab.fa-instagram.fa-2x]
+          a(href="#!") #[i.fab.fa-github.fa-2x]
+
+        footer &copy; Copyright 2019
+    
+    script(src="https://kit.fontawesome.com/6d2ea823d0.js")
+    script(src="../js/main.js")

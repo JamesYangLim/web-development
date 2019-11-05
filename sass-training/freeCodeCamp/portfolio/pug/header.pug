@@ -1,0 +1,10 @@
+header
+  .menu-btn
+    span.menu-btn__burger
+  nav.nav
+    ul.menu-nav
+      - var ap = page => activePage == page ? 'active' : ''
+      li.menu-nav__item(class=ap('index')) #[a.menu-nav__link(href="index.html") Home]
+      li.menu-nav__item(class=ap('about')) #[a.menu-nav__link(href="about.html") About Me]
+      li.menu-nav__item(class=ap('projects')) #[a.menu-nav__link(href="projects.html") My Projects]
+      li.menu-nav__item(class=ap('contact')) #[a.menu-nav__link(href="contact.html") Contact Me]

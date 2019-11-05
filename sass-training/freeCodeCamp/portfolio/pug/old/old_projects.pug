@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    title Mike Smith Projects
+    link(rel="stylesheet" href="../css/main.css")
+  body
+    header
+      .menu-btn
+        span.menu-btn__burger
+      nav.nav
+        ul.menu-nav        
+          li.menu-nav__item #[a.menu-nav__link(href="index.html") Home]
+          li.menu-nav__item #[a.menu-nav__link(href="about.html") About Me]
+          li.menu-nav__item.active #[a.menu-nav__link(href="projects.html") My Projects]
+          li.menu-nav__item #[a.menu-nav__link(href="contact.html") Contact Me]
+
+    main
+      section.projects
+        .projects__bio-image
+          h1.text-secondary My Projects
+
+        .projects__items
+          .projects__item
+            img(src="../img/project-1.jpg" alt="My Project 1")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+          .projects__item
+            img(src="../img/project-2.jpg" alt="My Project 2")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+          .projects__item
+            img(src="../img/project-3.jpg" alt="My Project 3")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+          .projects__item
+            img(src="../img/project-4.jpg" alt="My Project 4")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+          .projects__item
+            img(src="../img/project-5.jpg" alt="My Project 5")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+          .projects__item
+            img(src="../img/project-6.jpg" alt="My Project 6")
+            .projects__btns
+              a.projects__btn(href="#!") #[i.fas.fa-eye] Preview
+              a.projects__btn(href="#!") #[i.fab.fa-github] Github
+
+        .social-icons
+          a(href="#!") #[i.fab.fa-twitter.fa-2x]
+          a(href="#!") #[i.fab.fa-facebook.fa-2x]
+          a(href="#!") #[i.fab.fa-instagram.fa-2x]
+          a(href="#!") #[i.fab.fa-github.fa-2x]
+
+        footer &copy; Copyright 2019
+    
+    script(src="https://kit.fontawesome.com/6d2ea823d0.js")
+    script(src="../js/main.js")
