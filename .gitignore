@@ -3,4 +3,5 @@ package-lock.json
 pugjs-training/html/
 
 **/*.html
-**/css
+**/*.css
+**/*.css.map

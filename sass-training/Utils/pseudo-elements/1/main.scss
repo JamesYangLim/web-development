@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+/*
+Note that in CSS3, pseudo-classes such as :hover uses one colon (:) while
+pseudo-elements uses double colon (::) such as ::before and ::after
+
+Syntax:
+  selector::pseudo-element {
+    property: value;
+  }
+
+Notes:
+  1. ::before is added before the "content" of the p
+  2. ::after is added after the "content" of the p
+  3. pseudo-elements are displayed inline by default
+  4. pseudo-elements are not able to be selected
+  5. double colons (::) should be used instead of a single colon (:)
+  6. In contrast to pseudo-elements, pseudo-classes can be used to style an element based on its state.
+*/
+
+/*
+p::before {
+  content: '';
+  background: red;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+p::after {
+  content: '';
+  background: red;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+// pseudo-elements does not work on images
+img::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
+
+*/
+
+p::before {
+  content: 'hello';
+  background: red;
+  display: block;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+p::after {
+  content: 'goodbye';
+  background: red;
+  display: block;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+// p::first-line {
+//   color: blue;
+//   text-transform: uppercase;
+// }
