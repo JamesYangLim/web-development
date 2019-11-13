@@ -1,0 +1,23 @@
+
+// Install create-react-app to create a react application
+https://github.com/facebook/create-react-app
+https://reactjs.org/
+
+npm install create-react-app -g
+cd <directory>
+create-react-app <app name>
+
+NOTE: 
+  For some reason command above won't work for me. After I install
+  create-react-app globally and run create-react-app, I get error 
+  saying create-react-app command could not be found
+
+
+// Instead I reason
+
+npx create-react-app <app name>
+
+
+// To work with graphql, need to use graphql client such as Apollo
+https://www.apollographql.com/
+

@@ -1,10 +1,13 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
-
 const schema = require('./schema/schema'); // define the schema of the graph
+const cors = require('cors');
 
 const app = express();
+
+// allow cross origin request
+app.use(cors());
 
 const dbUsername = process.env.MONGO_DB_USER;
 const dbPassword = process.env.MONGO_DB_PASS;
