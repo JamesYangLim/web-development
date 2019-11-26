@@ -1,0 +1,10 @@
+https://gulpjs.com/docs/en/getting-started/quick-start
+
+npm install --global gulp-cli
+npm init
+npm install --save-dev gulp
+
+// create gulpfile.js 
+
+// view tasks available
+gulp --tasks 

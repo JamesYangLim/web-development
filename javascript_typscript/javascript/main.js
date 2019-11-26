@@ -123,6 +123,16 @@ console.log( 3 >= '4' );
 
 /*
 Math
+
+Order of Operation - B I D M A S
+
+  B - Bracket
+  I - Indices
+  D - Division
+  M - Multiplication
+  A - Addition
+  S - Substraction
+
 */
 
 function abTest(a, b) {
@@ -136,8 +146,44 @@ console.log(abTest(2,2));
 Javascript objects
 */
 var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
+  name: 'Camper',
+  legs: 4,
+  tails: 1,
+  friends: ['everything!'],
+  bark(){ console.log('Bark! Bark!'); }
 };
+
+let user = {
+  name: 'Hugh',
+  age: 40,
+  email: 'hugh123@hotmail.com',
+  location: 'Vienna',
+  food: ['Kentucky Fried Chicken', 'Lasagna'],
+  drink: { name: 'orange juice' },
+  greeting(){ 
+    console.log(`Hi, I am ${this.name}. How are ye?`); 
+  },
+  sharing(){ 
+    console.log(`I'm gonna tell ye. I love ${this.food[0]} and ${this.food[1]}`);
+  }
+};
+
+console.log(`${user.name} ${user.age} ${user.email} ${user.location}`);
+user.greeting();
+user.sharing();
+
+// user2 is a reference type
+let user2 = user;
+user2.age = 23;
+console.log(user.age);
+console.log(user2.age);
+
+/*
+arrow function
+*/
+
+var foo = () => {
+  console.log('abc');
+}
+
+foo();

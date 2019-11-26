@@ -1,0 +1,34 @@
+https://internetingishard.com/html-and-css/flexbox/
+
+justify content (container's horizontal alignment):
+  - center
+  - flex-start
+  - flex-end
+  - space-around
+  - space-between
+
+
+align-items (container's vertical alignment):
+  - center
+  - flex-start
+  - flex-end
+  - stretch
+  - baseline
+
+flex-wrap: forces items that don’t fit to get bumped down to the next row
+
+flex-direction: 
+(refers to whether a container renders its items 
+horizontally or vertically in normal or reverse order)
+  - row
+  - row-reverse
+  - column
+  - column-reverse
+
+NOTE: When set flex-direction to column, justify-content refers to the container's vertical 
+      alignment while align-items refers to the container's horizontal alignment.
+
+
+Auto-margins in flexbox are special. They can be used as an alternative to 
+an extra <div> when trying to align a group of items to the left/right of 
+a container. Think of auto-margins as a “divider” for flex items in the same container.
