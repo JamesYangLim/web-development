@@ -1,0 +1,63 @@
+https://internetingishard.com/html-and-css/css-box-model/#changing-box-behavior
+
+<h1> and <p> are block-level elements, while <em> and <strong> are inline elements.
+
+Behaviors associated with block and inline boxes:
+
+- Block boxes always appear below the previous block element. 
+  This is the “natural” or “static” flow of an HTML document when it 
+  gets rendered by a web browser.
+
+- The width of block boxes is set automatically based on the width 
+  of its parent container. In this case, our blocks are always the 
+  width of the browser window.
+
+- The default height of block boxes is based on the content it contains. 
+  When you narrow the browser window, the <h1> gets split over two lines, 
+  and its height adjusts accordingly.
+
+- Inline boxes don’t affect vertical spacing. They’re not for determining 
+  layout—they’re for styling stuff inside of a block.
+
+- The width of inline boxes is based on the content it contains, not the 
+  width of the parent element.
+
+
+Four properties of inline and block:
+
+- Content – The text, image, or other media content in the element.
+- Padding – The space between the box’s content and its border.
+- Border – The line between the box’s padding and margin.
+- Margin – The space between the box and surrounding boxes.
+
+
+Borders are common design elements, but they’re also invaluable for debugging.
+
+
+Padding vs Margin:
+
+- The padding of a box has a background, while margins are always transparent.
+- Padding is included in the click area of an element, while margins aren’t.
+- Margins collapse vertically, while padding doesn’t.
+
+
+NOTE: Flexbox layout scheme doesn’t have collapsing margins, so this isn’t really 
+      even an issue for modern websites.
+
+Generic Boxes:
+
+- Both <div> and <span> are “container” elements that don’t have any affect on the 
+  semantic structure of an HTML document. They do, however, provide a hook for 
+  adding CSS styles to arbitrary sections of a web page. 
+
+- The only real difference between a <div> and a <span> is that the former is for 
+  block-level content while the latter is meant for inline content.
+
+
+When you set the left and right margin of a block-level element to auto, 
+it will center the block in its parent element.
+
+
+“universal” CSS selector (*) override default styles to a predictable value.
+This selector matches every HTML element, effectively resetting the margin 
+and padding properties for our web page
