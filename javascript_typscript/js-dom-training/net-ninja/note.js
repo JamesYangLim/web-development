@@ -150,3 +150,35 @@ addForm.addEventListener('submit', e => {
   const value = addForm.querySelector('input[type="text"]').value;
   console.log(value);
 });
+
+
+///////////////////////////////// Style & Class
+
+var li = document.querySelector('li:last-child');
+li.getElementsByClassName.color = 'red';
+
+// NOTE: In css is "margin-top" while is js is "marginTop".
+// not hiphen in js.
+li.style.marginTop = '60px'; 
+
+console.log(li.className);
+li.className = 'name2';
+console.log(li.className);
+
+
+///////////////////////////////// Attributes
+
+var book = document.querySelector('li:first-child.name')
+console.log(book.getAttribute('class'));
+book.setAttribute('class', 'name2')
+console.log(book);
+console.log(book.hasAttribute('class'));
+book.removeAttribute('class');
+
+
+///////////////////////////////// Load DOM content
+document.addEventListener('DOMContentLoaded', e => {
+  // everything goes in here...
+});
+
+// NOTE: Don't have to do this if html include script(s) at the end.

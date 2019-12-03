@@ -38,11 +38,28 @@
 	    	</ul>
 	    </div>
 	    <form id="add-book">
+			<input type="checkbox" id="hide"/>
+			<label for="hide">Hide all books</label>
 	    	<input type="text" placeholder="Add a book..." />
 	    	<button>Add</button>
-      </form>
-      <!-- <a href="http://www.google.com">Google link test.</a> -->
-    </div>
+	  	</form>
+	  	<div id="tabbed-content">
+			<ul class="tabs">
+				<li data-target="#about" class="active">About</li>
+			  	<li data-target="#contact">Contact</li>
+			</ul>
+			<div class="panel active" id="about">
+			  	<p>Content for about tab...</p>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+			</div>
+			<div class="panel" id="contact">
+			  	<p>Content for contact tab...</p>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+			</div>
+		</div>
+      	<!-- <a href="http://www.google.com">Google link test.</a> -->
+	</div>
+	<!-- NOTE: include script at the end because need to load the DOM first -->
     <script src="app.js"></script>
   </body>
 </html>
