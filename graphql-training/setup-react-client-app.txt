@@ -1,4 +1,3 @@
-
 // Install create-react-app to create a react application
 https://github.com/facebook/create-react-app
 https://reactjs.org/
