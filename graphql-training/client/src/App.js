@@ -8,7 +8,7 @@ import AddBook from "./components/AddBook"
 
 // Apollo client setup
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:5000/graphql"
 });
 
 function App() {
